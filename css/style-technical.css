@@ -1,0 +1,78 @@
+body {
+    color: black;
+    margin: 0;
+}
+#navbar header, #main-doc header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#navbar header {
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid black;
+}
+nav ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    padding: 0;
+}
+#navbar {
+    background-color: #b1c4a2;
+    height: 100%;
+    border-right: 1.5px solid;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+}
+#navbar ul li {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.nav-link {
+    text-decoration: none;
+    padding: 1.5rem 5.5rem 1.5rem 1.5rem;
+    display: block;
+}
+#main-doc {
+    background-color: #f1f5fb;
+    position: absolute;
+    margin-left: 17.8rem;
+    padding: 1.5rem 2.5rem 2rem .5rem;
+}
+#main-doc header {
+    font-size: 1.7rem;
+    padding: 2rem 1.5rem 0.6rem 1.2rem;
+}
+#main-doc li {
+    margin-bottom: 0.5rem;
+}
+.top-paragraph, .main-section article {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2rem;
+}
+.main-section article code {
+    background-color: rgb(221, 209, 209);
+    padding: 1rem;
+    display: inline-block;
+}
+a:link, a:visited {
+    color: black;
+}
+@media (max-width: 800px) {
+    #navbar header {
+        text-align: center;
+    }
+    #navbar {
+        position: inherit;
+        width: 100%;
+    }
+    #navbar ul li:last-child, nav ul {
+        margin-bottom: 0;
+    }
+    #navbar ul li:last-child {
+        display: none;
+    }
+    #main-doc {
+        margin: 0;
+    }
+}
