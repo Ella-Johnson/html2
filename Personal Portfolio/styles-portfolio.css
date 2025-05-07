@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+
+:root {
+    --white: #fdf3d6;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #313857;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 40px 35px;
+}
+
+.nav-link {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.nav-link, a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e4a0aa;
+}
+
+.my-name {
+    font-size: 4rem;
+    margin-bottom: 5px; 
+}
+
+.web {
+    font-size: 1.5rem;
+}
+
+.my-name, .web {
+    color: #fdf3d6;
+    background-color: #a03b4a;
+    padding: 30px 70px;
+}
+
+.projects-header {
+    font-size: 3rem;
+    color: #313857;
+    margin-bottom: 10px;
+}
+
+#projects {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #fdf3d6;
+    font-weight: bold;
+}
+
+.project-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 30px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #e4a0aa;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #598099;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+.contact-link {
+    font-size: 1.2rem;
+    margin: 30px;
+}
+
+.nav-link, .web, .project-title, .contact-link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact a:hover {
+    color: maroon;
+}
+
+#navbar a:hover {
+    color: rgb(174, 1, 1);
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1030px) {
+    .my-name, .web {
+        padding: 40px 150px;
+    }
+}
+
